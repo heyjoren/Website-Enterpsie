@@ -1,0 +1,243 @@
+/*Dit is de stijl van de inhoud van de home pagina.*/
+
+.box{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Verdana;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Dit is de stijl van de hoofding*/
+.contact{
+    font-size: 50px;
+    text-align: center;
+    color: #ff2727;
+    margin-top: 10px;
+}
+
+.lijn{
+    border-radius: 5px;
+    border: #1D594E 10px solid;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+/*Dit is de stijl van het invul gedeelte box 1*/
+
+.box1{
+    margin: 25px;
+}
+
+.ster{
+    color: #ff2727;
+}
+
+.verplicht{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.sterveld{
+    color: #ff2727;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.sterveld4{
+    color: #ff2727;
+    padding-right: 6px;
+    margin-left: 10px;
+}
+
+.velden{
+    margin-bottom: 10px;
+}
+
+.input1{
+    width: 150px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.input2{
+    width: 250px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.input3{
+    width: 150px;
+    height: 20px;
+    padding-left: 5px;
+    margin-left: 50px;
+}
+
+.input4{
+    width: 500px;
+    height: 150px;
+    padding-left: 5px;
+    resize: none;
+}
+
+input[type=text]:focus{
+    border: 3px solid #1D594E;
+}
+
+.input4:focus{
+    border: 3px solid #1D594E;
+}
+
+.input2:focus{
+    border: 3px solid #1D594E;
+}
+
+.input3:focus{
+    border: 3px solid #1D594E;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Dit is de stijl van de knoppen*/
+.knop{
+    margin-top: 40px;
+}
+
+.button1{
+    background-color: #1D594E;
+    border: none;
+    color: #F2CB05;
+    padding: 15px 22px;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px #F2CB05;
+}
+
+.button2{
+    background-color: #1D594E;
+    border: none;
+    color: #F2CB05;
+    padding: 15px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px #F2CB05;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Dit is de stijl van box 2*/
+.box2{
+    float: right;
+    margin-right: 400px;
+}
+
+.box2::after{
+    content: "";
+	display: block;
+	clear: both;    
+}
+
+.adres{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.box2_1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.route{
+    text-align: center;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    color: black;
+    padding-top: 10px;
+}
+
+.routepara{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link:link {
+    color: black;
+    text-decoration-line:none
+  }
+  
+  /* visited link */
+ .link:visited {
+    color: black;
+    text-decoration-line:none
+  }
+  
+  /* mouse over link */
+.link:hover {
+    color: black;
+    text-decoration-line:none
+  }
+  
+  /* selected link */
+.link:active {
+    color: black;
+    text-decoration-line:none
+  }
+
+/*---------------------------------------------------------------------------------------*/
+/*algemeene stijl allert*/
+.alert::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.button{
+    font-size: 16px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+.button:hover{
+    border:solid black 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tekst1{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.tekst2{
+    padding-bottom: 50px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*stijl allert naam verkeerd*/
+
+.alert{
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 50%;
+    position:absolute;
+    border:solid black 5px;
+    display: none;
+
+
+    width:300px;
+    height:150px;
+
+    top:42%;
+    left:40%;
+
+}

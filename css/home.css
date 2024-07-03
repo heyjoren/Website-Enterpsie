@@ -1,0 +1,66 @@
+/*Dit is de stijl van de inhoud van de home pagina.*/
+
+/*de stijl van box 1*/
+/*de algemeene stijl van box 1*/
+.box1{
+    /*margin: 50px;*/
+    padding: 50px;
+    background-color: #1D594E;
+    border:solid black 5px;
+}
+
+/*Dit is om de img in box 1 te houden.*/
+.box1::after{
+    content: "";
+	display: block;
+	clear: both;    
+    }
+
+/*de stijl van de hoofding*/
+.welkom{
+    text-align: center;
+    font-size: 100px;
+    color: #F2CB05;
+}
+
+/*de stijl van de afbeelding*/
+.logo_tekst{
+    float: left;
+    width: 250PX;
+}
+
+/*de stijl van de eerste paragraaf op de pagina*/
+.tekst1{
+    padding-top: 100px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 300px;
+    color: #ff2727;
+}
+
+.tekst2{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 300px;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*De nav bar van de home*/
+nav li li {
+    border-left: solid black 5px;
+    border-right: solid black 5px;
+}
+
+.nav1{
+    border-top: solid black 5px;
+    border-bottom: solid black 2.5px;
+}
+
+.nav2{
+    border-bottom: solid black 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;    
+}

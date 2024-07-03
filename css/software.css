@@ -1,0 +1,90 @@
+/*de algemeene stijl van de boxen*/
+.box{
+    font-family: Verdana;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+/*de stijl van box 1*/
+.box1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.box1::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.afbeelding1{
+    width: 150px;
+    float: right;
+    margin-right: 490px;
+}
+
+.tekst1{
+    margin-top:70px;
+    float: left;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*de stijl van box 2*/
+.box2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.box2::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.afbeelding2{
+    width: 150px;
+    float: right;
+    margin-right: 490px;
+}
+
+.tekst2{
+    margin-top: 60px;
+    float: left;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*de stijl van box 3*/
+.box3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.box3::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.afbeelding3{
+    width: 150px;
+    float: right;
+    margin-right: 490px;
+}
+
+.tekst3{
+    margin-top:40px;
+    float: left;
+    width:  1000px;
+}

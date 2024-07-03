@@ -1,0 +1,127 @@
+/*Algemeene stijl*/
+body{
+	font-family:Arial
+  }
+
+/*---------------------------------------------------------------------------------------*/
+/*Stijl van een nieuw lettertype*/
+
+  @font-face {
+	font-family: Bruno Ace SC;
+	src: url(font-family/Bruno_Ace_SC/BrunoAceSC-Regular.ttf);
+ }
+ 
+  @font-face {
+	 font-family: Bruno Ace Regular;
+	 src: url(font-family/Bruno_Ace_Regular/Bruno\ Ace\ Regular.ttf);
+  }
+
+/*---------------------------------------------------------------------------------------*/
+/*Stijl van de folledige pagina*/
+.wrapper{
+	min-width:700px;
+	margin:0px auto 0px auto;
+}
+/*---------------------------------------------------------------------------------------*/
+/*Stijl van de header*/
+header{
+background-color: #1D594E;
+}
+
+/*om de img in de header te zetten*/
+header::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.logo{
+	width:100px;
+	float:left;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.title{
+	font-size:50px;
+	text-align: left;
+	margin-left: 45%;
+	padding: 25px 0px;
+    font-family: Bruno Ace SC;
+    color: #F2CB05;
+  }
+/*---------------------------------------------------------------------------------------*/
+/*De stijl van de navigatie bar*/
+
+/*De kleur van de navigatie bar*/
+nav{
+    background-color: #1D594E;
+}
+
+/*Om ze naast elkaar te zetten*/
+nav li{
+    float: left;
+    width: 200px;
+}
+
+/*Dit is voor de padding rechts*/
+nav>ul>li:first-child {					
+	padding-left: 1%;
+}
+
+
+/* Zet de nav nav in te kleuren */
+nav ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* stijl van de tekst*/
+nav a {
+	display:block;
+	color: #F2CB05;
+	text-decoration: none;
+	text-align:center;
+	padding: 10px 15px;
+}
+
+/* stijl the active knop */
+.active {
+	background-color: #267567;
+}
+
+/* stijl als je over een knop hovert*/
+nav a:hover:not(.active) {
+	background-color: #F2CB05;
+	color: #1D594E;
+}
+
+/* verberg de 2de laag */
+nav li ul {
+	position: absolute;
+	width: 200px;
+	display: none;
+}
+
+nav li li {
+	background-color: #1D594E;
+	border-right: none;
+}
+
+/* geef de 2de laag als je er over hovert */
+nav li:hover ul {
+	display: block;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Style the footer */
+footer {
+	padding: 20px;
+	text-align: center;
+	color: #F2CB05;
+    background-color: #1D594E;
+	padding-top: 20px;
+}

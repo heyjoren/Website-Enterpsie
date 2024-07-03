@@ -1,0 +1,71 @@
+/*De stijl van de navigatie bar van Project*/
+.subactive{
+    background: linear-gradient(#1D594E 70%, #267567 30%);
+}
+
+.subactive:hover{
+    background: linear-gradient(#F2CB05 100%,black 0%);
+}
+/*---------------------------------------------------------------------------------------*/
+/*box stijl*/
+.box{
+    margin-left: 20px;
+}
+/*---------------------------------------------------------------------------------------*/
+/*tittel stijl*/
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1D594E;
+}
+/*---------------------------------------------------------------------------------------*/
+/*paragraaf 1 stijl*/
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tekst1{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.tekst2{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+/*---------------------------------------------------------------------------------------*/
+/*afbeelding stijl*/
+.afbeelding{
+    width: 100%;
+}
+/*---------------------------------------------------------------------------------------*/
+/*flexbox stijl*/
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #1D594E;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*De div instellingen van box 1 en 3*/
+.flexboxdiv13
+{
+    margin: 10px;
+    padding: 20px;
+    width: 10%;
+    background-color: white;
+}
+
+/*De div instellingen van box 2*/
+.flexboxdiv2
+{
+    margin: 10px;
+    padding: 20px;
+    width: 70%;
+    background-color: white;
+}

@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Project</title>	
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/stijl_site.css" rel="stylesheet" />
+	<link href="css/project.css" rel="stylesheet" />
+	
+<script src="jQuery/JQuerry.js"></script>
+
+	<script>
+	var xbox3 , ybox3 , xbox4 , ybox4; 
+
+		$(document).ready(function()
+		{
+			$("#box5").hide();
+			$("#box5_tekst").hide();
+
+			$(".box3").click(function hardware()
+			{
+				$("#box5").fadeIn(1000);
+
+				ybox3 = $(".box3").offset().left;
+				xbox3 = $(".box3").offset().top;
+
+				ybox3 -= 5; /*voor de border*/
+				xbox3 -= 5; /*voor de border*/
+
+				$("#box5").css({
+					top: xbox3,
+					left: ybox3
+				});
+				setTimeout(animatie_hard, 2000);
+			});
+
+			function animatie_hard()
+			{
+				$("#box5").animate({
+					top: '200px',
+					left: '50px',
+					width: '90%',
+					height: '1050px'
+					});
+
+				$(".afbeelding5").animate({
+					width: '90%'
+				});
+				
+				$(".titel_hard").animate({
+						fontSize: '50px'
+				});
+
+				$('html, body').animate({
+					scrollTop: '0px'
+				})
+				
+				$("#box5_tekst").slideDown(1500);
+			};
+
+			$("#terug_hard").click(function()
+			{
+				$("#box5_tekst").slideUp(1500);
+
+				ybox3 = $(".box3").offset().left;
+				xbox3 = $(".box3").offset().top;
+
+				ybox3 -= 5; /*voor de border*/
+				xbox3 -= 5; /*voor de border*/
+
+				setTimeout(animatie_terug_hard, 1500);
+
+				function animatie_terug_hard ()
+				{
+
+				$(".titel_hard").animate({
+						fontSize: '25px'
+				});
+
+				$("#box5").animate({
+					top: xbox3,
+					left: ybox3,
+					width: '1070px',
+					height: '227px'
+				});
+
+				$(".afbeelding5").animate({
+					width: '1050px'
+				});
+
+				$('html, body').animate({
+					scrollTop: '1064px'
+				})
+
+				setTimeout(animatie_out_hard, 800);
+
+					function animatie_out_hard ()
+					{
+					$("#box5").fadeOut(1500);
+					};
+
+				};
+								
+			});
+
+			$("#ganaarsoft").click(function()
+			{
+				ybox3 = $(".box3").offset().left;
+				xbox3 = $(".box3").offset().top;
+
+				ybox3 -= 5; /*voor de border*/
+				xbox3 -= 5; /*voor de border*/
+				
+				$(".titel_hard").css({
+						fontSize: '25px'
+				});
+
+				$("#box5").css({
+					top: xbox3,
+					left: ybox3,
+					width: '1070px',
+					height: '227px'
+				});
+
+				$(".afbeelding5").css({
+					width: '1050px'
+				});
+
+				$("#box6").css({
+					top: '20%',
+					left: '50px',
+					width: '90%',
+					height: '1050px'
+				});
+
+				$(".afbeelding6").css({
+					width: '90%'
+				});
+
+				$(".titel_soft").css({
+					fontSize: '50px'
+				});
+				
+				$("#box6").show();
+				$("#box6_tekst").show();
+				$("#box5").hide();
+				$("#box5_tekst").hide();
+			});
+
+		});
+
+		$(document).ready(function()
+		{
+			$("#box6").hide();
+			$("#box6_tekst").hide();
+
+			$(".box4").click(function hardware()
+			{
+				$("#box6").fadeIn(1000);
+
+				ybox4 = $(".box4").offset().left;
+				xbox4 = $(".box4").offset().top;
+
+				ybox4 -= 5; /*voor de border*/
+				xbox4 -= 5; /*voor de border*/
+
+				$("#box6").css({
+					top: xbox4,
+					left: ybox4
+				});
+
+				setTimeout(animatie_soft, 2000);
+			});
+
+			function animatie_soft()
+			{
+				$("#box6").animate({
+					top:  '200px',
+					left: '50px',
+					width: '90%',
+					height: '1050px'
+				});
+
+				$(".afbeelding6").animate({
+					width: '90%'
+				});
+
+				$(".titel_soft").animate({
+					fontSize: '50px'
+				});
+
+				$('html, body').animate({
+					scrollTop: '0px'
+				})
+
+				$("#box6_tekst").slideDown(1500);
+			};
+
+			$("#terug_soft").click(function()
+			{
+				$("#box6_tekst").slideUp(1500);
+
+				ybox4 = $(".box4").offset().left;
+				xbox4 = $(".box4").offset().top;
+
+				ybox4 -= 5; /*voor de border*/
+				xbox4 -= 5; /*voor de border*/
+
+				setTimeout(animatie_terug_soft, 1500);
+
+				function animatie_terug_soft ()
+				{
+
+				$("#box6").animate({
+					top: xbox4,
+					left: ybox4,
+					width: '810px',
+					height: '228px'
+				});
+
+				$(".afbeelding6").animate({
+					width: '800px'
+				});
+
+				$(".titel_soft").animate({
+					fontSize: '25px'
+				});
+
+				$('html, body').animate({
+					scrollTop: '1351px'
+				})
+
+				setTimeout(animatie_out_soft, 800);
+
+					function animatie_out_soft ()
+					{
+					$("#box6").fadeOut(1500);
+					};
+
+				};
+								
+			});
+
+			$("#ganaarhard").click(function()
+			{
+				$("#box6").animate({
+					top: xbox4,
+					left: ybox4,
+					width: '810px',
+					height: '228px'
+				});
+
+				$(".afbeelding6").animate({
+					width: '800px'
+				});
+
+				$(".titel_soft").animate({
+					fontSize: '25px'
+				});
+
+				$("#box5").css({
+					top: '20%',
+					left: '50px',
+					width: '90%',
+					height: '1050px'
+				});
+
+				$(".afbeelding5").css({
+					width: '90%'
+				});
+
+				$(".titel_hard").css({
+					fontSize: '50px'
+				});
+				
+				$("#box5").show();
+				$("#box5_tekst").show();
+				$("#box6").hide();
+				$("#box6_tekst").hide();
+
+				$("#box6").css({
+					top: xbox4,
+					left: ybox4,
+					width: '810px',
+					height: '228px'
+				});
+			});
+
+		});		
+
+
+		setInterval("slideshow()", 27000);
+
+
+		$(document).ready(function slideshow()
+		{
+			$("#img1").show();
+			$("#img2").hide();
+			$("#img3").hide();
+			$("#img4").hide();
+
+			setTimeout(eennaartwee, 3000);
+
+				function eennaartwee()
+				{
+					$("#img1").fadeOut(1500);
+
+					$("#img2").fadeIn(1500);
+
+					setTimeout(tweenaardrie, 3000);
+
+					function tweenaardrie()
+					{
+						$("#img2").fadeOut(1500);
+
+						$("#img3").fadeIn(1500);
+
+						setTimeout(drienaarvier, 3000);
+
+						function drienaarvier()
+						{
+							$("#img3").fadeOut(1500);
+
+							$("#img4").fadeIn(1500);
+
+							setTimeout(viernaareen, 3000);
+
+							function viernaareen()
+							{
+								$("#img4").fadeOut(1500);
+
+								$("#img1").fadeIn(1500);
+
+								setTimeout(eennaartwee, 3000);
+							};
+
+						};
+
+					};
+				};
+
+		});
+
+
+	</script>
+
+</head>
+	
+<body>
+	<div class="wrapper">
+		<header>
+			<img class="logo" src="img/Logo_dik_watermark_klein.png" alt="Logo"/>
+			<p class="title">
+				Speeddash
+			</p>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="./index_(Start_pagina).html">Home</a></li>
+				<li><a href="./Over_mij.html">Over mij</a></li>
+				<li><a href="./Project.html" class="active">Project</a>
+					<ul>
+						<li class="nav1"><a href="./Projectidee.html">Projectidee</a></li>
+					</ul>
+				</li>
+				<li><a href="./Software.html">Software</a></li>
+				<li><a href="./Contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="box">
+
+			<div class="box7">
+				<img class="logo_pg" src="img/Logo_dik_watermark_klein.png" alt="Logo"/>
+				<p class="title_pg">
+					Speeddash
+				</p>
+
+			</div>
+
+
+            <div class="box8">
+
+				<div class="box2_img">
+					<img class="img4" id="img4" src="img/Project/SlideShow/dashboard_web2.png" alt="slideshow afbeelding 4"/>
+					<img class="img3" id="img3" src="img/Project/SlideShow/dashboard_web.png" alt="slideshow afbeelding 3"/>
+					<img class="img2" id="img2" src="img/Project/SlideShow/oud_dashboard" alt="slideshow afbeelding 2"/>
+					<img class="img1" id="img1" src="img/Project/SlideShow/auto.jpg" alt="slideshow afbeelding 1"/>
+
+
+				</div>
+
+			    	<p class="box2">
+                		Hallo,<br> ik ben Joren Heyvaert,<br> 18 jaar en woonachtig te Londerzeel.<br> Ik ben in het secundair onderwijs afgestudeerd in de richting
+                		Elektromechanica. Momenteel ben ik student aan Thomas More hogeschool<br> in Sint-Katelijne-Waver,
+			    		waar ik de richting<br> application development eerste fase volg.<br>
+						Weer een nieuw begin en een nieuwe uitdaging! 
+                	</p>
+				
+
+				<div class="tekst1">
+
+					<p class="box9">
+						Een digitaal dashboard creëren is ons project.<br> Gezien er toch nog veel 'oude' wagens rondrijden zonder digitaal dashboard,
+						willen wij dé oplossing aanbieden! Zelfs ééntje dat iedereen kan installeren.<br>
+						In deze hedendaagse tijd is het aangenaam en misschien noodzakelijk om deze functies in de wagen te hebben. 
+
+					</p>
+				</div>
+			</div> 
+
+			           
+            <div class="box3">
+                <h2>
+                    Hardware
+                </h2>
+                <img class="afbeelding2" src="img/Project/hardware_oranje_groen.png" alt="Hardware schema"/>
+
+                <p class="tekst2">
+                    klik voor extra informatie over de hardware
+                </p>
+
+            </div>
+
+			
+			<div class="box4">
+                <h2>
+                    Software
+                </h2>
+                <img class="afbeelding3" src="img/Project/software_oranje_groen.png" alt="Software schema"/>
+
+                <p class="tekst3">
+                    klik voor extra informatie over de software
+                </p>
+
+            </div>
+
+			<div class="box5" id="box5">
+                <h2 class="titel_hard">
+                    Hardware
+                </h2>
+                <img class="afbeelding5" src="img/Project/hardware_oranje_groen.png" alt="Software schema"/>
+
+				<div id="box5_tekst">
+					<p class="tekst5_1">
+						Als we van links naar rechts kijken zien we als eerste de auto, vervolgens OBD Link, daarna de raspberry pi
+						en als laatste het LCD scherm.
+					</p>
+
+					<p class="tekst5_2">
+						We hebben een rechtstreekse verbinding tussen de auto en de OBD Link.
+					</p>
+					<p class="tekst5_2">
+						Dan hebben we een denkbeeldige verbinding tussen de OBD Link en de raspberry pi.
+					</p>
+					<p class="tekst5_2">
+						Waarom denkbeeldig?
+					</p>
+					<p class="tekst5_2">
+						Dit is omdat de verbinding hier via bluetooth verloopt.
+					</p>
+					<p class="tekst5_2">
+						Vervolgens is er een fysieke verbinding (met draden) tussen de raspberry pi en het LCD scherm.
+					</p>
+
+					<div>
+
+					<button class="button" id="terug_hard">Keer terug naar de project pagina</button>
+					<button class="button" id="ganaarsoft">Ga verder naar de software info</button>
+					</div>
+				</div>
+
+            </div>
+
+			<div class="box6" id="box6">
+                <h2 class="titel_soft">
+                    Software
+                </h2>
+                <img class="afbeelding6" src="img/Project/software_oranje_groen.png" alt="Software schema"/>
+				
+				<div id="box6_tekst">
+					<p class="tekst6_1">
+						Als we van links naar rechts kijken zien we als eerste de OBD Link, als tweede de raspberry pi en als laatste het LCD scherm.
+					</p>
+
+					<p class="tekst6_2">
+						We moeten via de software de informatie van de OBD Link (auto) naar de raspberry pi zien te krijgen.
+					</p>
+					<p class="tekst6_2">
+						Daarna moet op zijn beurt de raspberry pi verbinding zien te maken met de OBD Link.
+					</p>
+					<p class="tekst6_2">
+						Uiteindelijk moet de raspberry pi de informatie van de OBD Link naar het LCD scherm sturen zodat we het kunnen aflezen.
+					</p>
+				
+					<div>
+					<button class="button" id="terug_soft">Keer terug naar de project pagina</button>
+					<button class="button" id="ganaarhard">Ga naar de hardware info</button>
+				</div>
+			</div>
+
+            </div>
+
+
+
+
+		</div>
+
+
+		<footer>
+			<p>Copyright &copy; Thomas More Mechelen-Antwerpen vzw - 
+			Campus De Nayer - Professionele bachelor elektronica-ict – 2023 </p>
+		</footer>
+	</div>   
+</body>
+</html>

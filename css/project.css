@@ -1,0 +1,270 @@
+/*de algemeene stijl van de boxen*/
+.box{
+    background-color: #F28705;
+}
+
+h2{
+    color: #ff2727;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+body, html, .main {
+    height: 100%;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van het logo en de naam*/
+
+.box7{
+    padding-top: 50px;
+}
+
+.box7::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.logo_pg{
+    width:17%;
+	float:left;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.title_pg{
+    font-size: 150px;
+    color: #1D594E;
+    font-family: Bruno Ace SC;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*de stijl van box 2 (8)*/
+
+.box8{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.img1{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+}
+
+.img2{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+}
+
+.img3{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+}
+
+.img4{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+}
+
+.box2_img{
+    float: left;
+    border: solid 5px #1D594E;
+    width: 750px;
+    height: 500px;
+    position: relative;
+    overflow: hidden ;
+}
+
+.box8::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 2_1 (2)*/
+.box2{
+    background-color: #1D594E;
+    color: #F2CB05;
+    width: 27%;
+    min-width: 20%;
+    padding: 20px;
+    float: left;
+    margin-left: 8%;
+    font-family: Bruno Ace Regular ;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 9 (3)*/
+
+.box9{
+    background-color: #1D594E;
+    color: #F2CB05;
+    width: 9.5%;
+    padding: 20px;
+    float: right;
+    font-family: Bruno Ace Regular;
+    margin-top: 100px;
+    margin-right: 8%;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 3*/
+.box3{
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 20px;
+    width: 1070px;
+    margin: 20px;
+    margin-right: 0px;
+    margin-left: 50px;
+}
+
+.tekst2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 4*/
+.box4{
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 20px;
+    width: 810px;
+    float: right;
+    margin-right: 50px;
+}
+
+.box::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.tekst3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 5*/
+.box5{
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 20px;
+    width: 810px;
+
+    text-align: center;
+    position:absolute;
+    border:solid black 5px;
+
+    width: 1070px;
+    height: 227px;
+
+    margin-right: 10%;
+
+    top:1087px;
+    left:45px;
+}
+
+.titel_hard{
+    color: #ff2727;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.tekst5_1{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Bruno Ace SC;
+}
+
+.tekst5_2{
+    text-align: center;
+    font-family: Bruno Ace SC;
+}
+
+.afbeelding5{
+    width: 1050px;
+    
+}
+
+.button{
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: #F2CB05;
+    border: none;
+    color: #1D594E;
+    padding: 15px 22px;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px #F28705;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*de stijl van box 6*/
+.box6{
+    background-color: #1D594E;
+    color: #F2CB05;
+    padding: 20px;
+    width: 810px;
+
+    text-align: center;
+    position:absolute;
+    border:solid black 5px;
+
+
+    width: 810px;
+    height: 228px;
+
+
+    top:1375px;
+    right: 50px;
+}
+
+.titel_soft{
+    color: #ff2727;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.tekst6_1{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Bruno Ace SC;
+}
+
+.tekst6_2{
+    text-align: center;
+    font-family: Bruno Ace SC;
+}
+
+.afbeelding6{
+    width: 800px;
+    padding-bottom: 50px;
+    
+    
+    
+}
+

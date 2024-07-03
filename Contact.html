@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Contact</title>	
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/stijl_site.css" rel="stylesheet" />
+	<link href="css/contact.css" rel="stylesheet" />
+
+    <script>
+        function check()
+        {
+            var naam, mail , vraag;
+
+            naam = document.getElementById("naam").value;
+            mail = document.getElementById("email").value;
+            vraag = document.getElementById("vraag").value;
+
+            if(naam == "")
+            {
+                if(mail == "")
+                {
+                    document.getElementById("tekst2").innerHTML = "Vul uw naam en mail in."
+                    document.getElementById("alert").style.display="block"
+
+                    if(vraag == "")
+                    {
+                        document.getElementById("tekst2").innerHTML = "Vul uw naam, mail en vraag in."
+                        document.getElementById("alert").style.display="block"
+                    }
+                }
+                else if(vraag == "")
+                {
+                    document.getElementById("tekst2").innerHTML = "Vul uw naam en vraag in."
+                    document.getElementById("alert").style.display="block"
+                }
+                else
+                {
+                    document.getElementById("tekst2").innerHTML = "Vul uw naam in."
+                    document.getElementById("alert").style.display="block"
+                }
+                
+            }
+            else if(mail == "")
+            {
+                if(vraag == "")
+                {
+                    document.getElementById("tekst2").innerHTML = "Vul uw mail en vraag in."
+                    document.getElementById("alert").style.display="block"
+                }
+                else
+                {
+                    document.getElementById("tekst2").innerHTML = "Vul uw mail in."
+                    document.getElementById("alert").style.display="block"
+                }
+                
+            }
+            else if(vraag == "")
+            {
+                document.getElementById("tekst2").innerHTML = "Vul uw vraag in."
+                document.getElementById("alert").style.display="block"
+            }
+
+        }
+
+        function kruis()
+        {
+            document.getElementById("alert").style.display="none"
+        }
+
+        function controle()
+        {
+            var naam, mail , vraag;
+
+            naam = document.getElementById("naam").value;
+            mail = document.getElementById("email").value;
+            vraag = document.getElementById("vraag").value;
+
+            if(naam == "")
+            {
+                return false;
+            }
+            else if (mail == "")
+            {
+                return false;
+            }
+            else if (vraag == "")
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+</head>
+	
+<body>
+    <div class="wrapper">
+	<header>
+		<img class="logo" src="img/Logo_dik_watermark_klein.png" alt="Logo"/>
+		<p class="title">
+			Speeddash
+		</p>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="./index_(Start_pagina).html">Home</a></li>
+			<li><a href="./Over_mij.html">Over mij</a></li>
+			<li><a href="./Project.html">Project</a>
+				<ul>
+					<li class="nav1"><a href="./Projectidee.html">Projectidee</a></li>
+				</ul>
+			</li>
+			<li><a href="./Software.html">Software</a></li>
+			<li><a href="./Contact.html" class="active">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div class="box">
+        <h1 class="contact">
+                Contact
+        </h1>
+        <hr class="lijn">
+    </div>
+
+    <div class="box1">
+
+        <div class="box2">
+            <div class="box2_1">
+                <h1 class="adres">
+                   Adres
+                </h1>
+                <p >Jan Pieter de Nayerlaan 5</p>
+                <p>2860 Sint-Katelijne-Waver</p>
+            </div>
+
+            <div>
+                <a href="https://www.google.be/maps/dir//Jan+Pieter+de+Nayerlaan+5,+2860+Sint-Katelijne-Waver/@51.0636436,4.3606796,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c3e4e11584e8b9:0x536474724b5083e7!2m2!1d4.4988932!2d51.0684635!3e0"
+                target="_blank" class="link">
+                    <h1 class="route">
+                        Route  
+                    </h1>
+                    <p class="routepara">
+                        bekijk de route hier.
+                    </p>
+                </a>
+            </div>
+    
+        </div>
+
+        <p class="verplicht">Velden met een <a class="ster">*</a> zijn verplicht.</p>
+
+        <form action="mailto:r0933464@student.thomasmore.be" method="post" enctype="text/plain" onsubmit="return controle()">
+            <div></div>
+            <p class="velden">Naam:             
+                
+                    <label for="naam" class="sterveld">*</label>
+                    <input class="input1" type='text' name="Naam" id="naam" placeholder="Voornaam Naam"/>
+               
+            </p>
+            <p class="velden">Email:
+                
+                    <label for="email" class="sterveld">*</label>
+                    <input class="input2" type='email' name="Email" id="email" placeholder="voorbeeld@vb.com"/>
+                
+            </p>
+            <p class="velden">Tel:
+                
+                <input class="input3" type='tel' name="Telefoonnummer" id="tel" placeholder="+ 32 123 45 67 89" pattern="+ [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}"/>
+                
+            </p>
+            <p class="velden">Vraag:
+               
+                    <label for="vraag" class="sterveld4">*</label>
+                    <textarea class="input4" name="Vraag" id="vraag"></textarea>
+                
+            </p>
+
+            <p class="knop">
+                <input class="button1" type="submit" value="verstuur" onclick="check()">
+                <input class="button2" type="reset" value="annuleren">
+            </p>
+
+        </form>
+
+        <div class="alert" id="alert">
+            <div>
+                <input class="button" type="button" value="x" onclick="kruis()">
+            </div>
+            <p class="tekst1">
+                 U hebt niet alles correct ingevuld.
+            </p>
+            <p class="tekst2" id="tekst2">
+                 
+            </p>
+        </div>
+
+        
+    </div>
+	    <footer>
+		    <p>Copyright &copy; Thomas More Mechelen-Antwerpen vzw - 
+	    	Campus De Nayer - Professionele bachelor elektronica-ict – 2023 </p>
+	    </footer>  
+    </div>   
+</body>
+</html>
